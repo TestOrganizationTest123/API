@@ -1,0 +1,8 @@
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: busybox:1.36.1
+    steps:
+      - run: echo "123"
+      - run: echo "456"
